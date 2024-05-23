@@ -1,0 +1,111 @@
+<style>
+	.accordion-style {
+		margin: 3rem auto
+	}
+
+	.accordion-style details {
+		margin-bottom: 1px
+	}
+
+	.accordion-style summary {
+		position: relative;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		padding: .75rem;
+		background-color: var(--primary-color, #575757);
+		color: #fff;
+		font-size: 1.2rem;
+		font-weight: 700
+	}
+
+	.accordion-style summary::-webkit-details-marker {
+		display: none
+	}
+
+	.accordion-style details summary::before,
+	.accordion-style details summary::after {
+		content: "";
+		position: absolute;
+		background: #fff;
+		display: block
+	}
+
+	.accordion-style details summary::before {
+		right: 1rem;
+		width: 10px;
+		height: 2px
+	}
+
+	.accordion-style details summary::after {
+		height: 10px;
+		width: 2px;
+		right: calc(1rem + 4px)
+	}
+
+	.accordion-style details[open] summary::after {
+		display: none
+	}
+
+	.accordion-style__content {
+		padding: 1.5rem 2rem
+	}
+
+	.accordion-style__content img {
+		margin-bottom: 1rem
+	}
+
+	.accordion-style .medium-4 {
+		width: 24.5%
+	}
+
+	@media only screen and (max-width:1024px) {
+		.accordion-style summary {
+			font-size: 1rem
+		}
+
+		.accordion-style .medium-4 {
+			width: 21%
+		}
+	}
+
+	@media only screen and (max-width:768px) {
+		.accordion-style .medium-4 {
+			width: 18%
+		}
+	}
+
+	@media only screen and (max-width:640px) {
+		.accordion-style .medium-4 {
+			width: initial
+		}
+	}
+</style>
+
+<div class="accordion-style">
+  <details>
+    <summary>What happens if you don't clean your windows?</summary>
+    <div class="accordion-style__content">
+      <p>The short answer: yes!</p>
+    </div>
+  </details>
+  <details>
+    <summary>Is it worth it to get my windows cleaned?</summary>
+    <div class="accordion-style__content">
+      <p>The short answer: yes!</p>
+    </div>
+  </details>
+  <details>
+    <summary>How often should windows be cleaned?</summary>
+    <div class="accordion-style__content">
+      <p>The short answer: yes!</p>
+      <p>The short answer: yes!</p>
+    </div>
+  </details>
+  <details>
+    <summary>Is it worth getting windows cleaned in the winter?</summary>
+    <div class="accordion-style__content">
+      <p>The short answer: yes!</p>
+    </div>
+  </details>
+</div>
